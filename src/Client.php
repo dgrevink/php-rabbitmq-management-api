@@ -23,7 +23,7 @@ class Client
     protected string $baseUrl;
 
     public function __construct(
-        ClientInterface $client = null,
+        ClientInterface $client,
         string $baseUrl = 'http://localhost:15672',
         string $username = 'guest',
         string $password = 'guest'
