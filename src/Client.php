@@ -18,12 +18,12 @@ use Psr\Http\Message\RequestFactoryInterface;
  */
 class Client
 {
-    protected ClientInterface $client;
+    protected ?ClientInterface $client;
     protected RequestFactoryInterface $requestFactory;
     protected string $baseUrl;
 
     public function __construct(
-        ClientInterface $client,
+        ?ClientInterface $client,
         string $baseUrl = 'http://localhost:15672',
         string $username = 'guest',
         string $password = 'guest'
